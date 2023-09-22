@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de cliente</title>
+</head>
+<body>
+    <h1>Registro de Cliente</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+    <p>
+        {{ form.username.label }}
+        {{ form.username }}
+    </p>
+    <p>
+        {{ form.email.label }}
+        {{ form.email }}
+    </p>
+    <p>
+        {{ form.password.label }}
+        {{ form.password}}
+    </p>
+         {{ form.submit() }}
+    </form>
+</body>
+</html>
